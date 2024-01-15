@@ -1,0 +1,14 @@
+<svg width="860" height="860" viewBox="0 0 860 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_45_384" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="860" height="860">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M798.404 208.113C706.745 240.164 641 327.404 641 430C641 532.596 706.745 619.836 798.404 651.887C723.124 776.607 586.301 860 430 860C192.518 860 0 667.482 0 430C0 192.518 192.518 0 430 0C586.301 0 723.124 83.3931 798.404 208.113Z" fill="#F754E1"/>
+</mask>
+<g mask="url(#mask0_45_384)">
+<rect width="3399" height="860" fill="url(#paint0_linear_45_384)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_45_384" x1="3399" y1="430" x2="-1.69749e-05" y2="409.5" gradientUnits="userSpaceOnUse">
+<stop offset="0.324392" stop-color="#F754E1"/>
+<stop offset="1" stop-color="#AB0895"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,70 @@
+:root {
+  --brown-baked-bread: #DACBA9;
+  --turquoise: #30D5C8;
+  --fuchsia: #F754E1;
+  --cherry-red: #F7022A;
+  --yellow: #FFEB3C;
+  --purple: #0B0613;
+  --cream: #FDF4E3;
+  --text-color: #FEE7FB;
+  --title-color: #F985EA;
+}
+
+@font-face {
+  font-family: 'RS RockStar';
+  src:
+    url('./RS-RockStar/RS-extrabold.otf');
+}
+
+
+body {
+  background-color: var(--purple);
+  color: var(--text-color) !important;
+  height: 100vh;
+  font-family: 'Montserrat', 'RS RockStar', sans-serif;
+}
+
+.content-card {
+  /* height: 100%;
+  max-height: 70dvh; */
+  border-radius: 56px;
+  border: 4px solid var(--fuchsia);
+  box-shadow: 0px 4px 40px var(--fuchsia);
+}
+
+header {
+  height: 10vh;
+}
+
+main {
+  height: 90vh;
+}
+
+.tab-button {
+  width: 1;
+}
+
+
+.bold-title {
+  font-family: 'RS Rockstar';
+}
+
+
+.nav-link {
+  color: var(--text-color);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+  color: var(--title-color);
+  background-color: transparent;
+}
+
+.gradient-btn {
+  border-radius: 10000px;
+  align-items: center;
+  border: none;
+  background-image: linear-gradient(45deg, #FF7878, #FFC898, #FFF89A, #CDF2CA, #A2CDCD, #D1E8E4, #CAB8FF);
+  color: var(--purple);
+
+}
