@@ -1,5 +1,5 @@
 ymaps.ready(init)
-    
+ 
     
 function init() {
     var myMap = new ymaps.Map('map', {
@@ -12,7 +12,7 @@ function init() {
     var control = myMap.controls.get('routePanelControl');
 
     control.options.set({  
-        maxWidth: '320px',
+        maxWidth: '250',
     });
 
     var multiRoutePromise = control.routePanel.getRouteAsync();

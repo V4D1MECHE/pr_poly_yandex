@@ -13,61 +13,72 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <link href="./src/index.css" rel="stylesheet" />
+  <link href="/assets/index.css" rel="stylesheet" />
 </head>
 
 <body class= "col d-flex flex-column align-items-center">
-  <header class="d-flex flex-row align-items-center container justify-content-between px-3">
+  <header class="d-flex flex-row align-items-center container justify-content-between py-2 py-md-4 px-3">
     <div class="d-flex align-items-center">
-      <img src="/public/images/frame.svg" class="bi" height="40">
+      <img src="/assets/images/frame.svg" class="bi" height="40">
       <span class="fs-5 bold-title mb-1" style="color: #C523AF;">eyepass</span>
     </div>
-    <span class="d-none fs-5 bold-title mb-1 me-3 d-md-block" style="color: var(--title-color);">экскурсии и прогулки по
+    <span class="d-none fs-5 bold-title  me-3 d-md-block" style="color: var(--title-color);">экскурсии и прогулки по
       москве</span>
   </header>
-  <main class=" container d-flex flex-column align-items-stretch pb-3 pb-sm-5">
-    <div class="col container d-flex flex-column align-items-stretch gap-4 pb-lg-5 " style="height: auto;">
-      <div class=" nav nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+  <main class=" container d-flex flex-column align-items-stretch pb-5">
+    <div class="col container d-flex flex-column align-items-stretch pb-5 gap-4 pb-lg-5 " style="height: auto;">
+      <div class=" nav nav-pills me-3" id="v-pills-tab" role="tablist" >
         <button class="nav-link active d-flex me-3 me-lg-5 px-0 py-1" id="v-pills-home-tab" data-bs-toggle="pill"
           data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
-          <span class="fs-5 fs-md-5 bold-title text-start">Карта</span>
+          <span class="fs-5 bold-title text-start">Карта</span>
         </button>
         <button class="nav-link d-flex me-3 me-lg-5 px-0 py-1" id="v-pills-profile-tab" data-bs-toggle="pill"
           data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
           aria-selected="false">
-          <span class="fs-5 fs-md-5 bold-title text-start">Кто мы?</span>
-        </button>
-        <button class="nav-link d-flex me-3 me-lg-5 px-0 py-1" id="v-pills-messages-tab" data-bs-toggle="pill"
-          data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
-          aria-selected="false">
-          <span class="fs-5 fs-md-5 bold-title text-start">Маршруты</span>
+          <span class="fs-5 bold-title text-start">Кто мы?</span>
         </button>
         <button class="nav-link d-flex me-3 me-lg-5 px-0 py-1" id="v-pills-settings-tab" data-bs-toggle="pill"
           data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
           aria-selected="false">
-          <span class="fs-5 fs-md-5 bold-title text-start">Наша команда</span>
+          <span class="fs-5 bold-title text-start">Почему мы?</span>
         </button>
-        <button class=" gradient-btn d-flex me-3 me-lg-5 px-3 " type="button">
-          <span class="fs-5 fs-md-5 bold-title text-start gradient-btn-label">Заказать</span>
+        <button class=" gradient-btn d-flex me-3 me-lg-5 px-3 " id="v-pills-messages-tab" data-bs-toggle="pill"
+        data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+        aria-selected="false">
+          <span class="fs-5 bold-title text-start gradient-btn-label">Заказать</span>
         </button>
+        
 
       </div>
-      <div class="col d-flex flex-column content-card tab-content px-5 pt-4 pb-5" id="v-pills-tabContent">
-
-        <div class="col d-flex flex-column tab-pane fade show active"  id="v-pills-home" style="width:100%" role="tabpanel" aria-labelledby="v-pills-home-tab">
+      <div class=" d-flex flex-column content-card tab-content pt-3 px-4 pb-4 pt-sm-4 px-sm-5 pb-sm-5" id="v-pills-tabContent">
+       <div class="tab-pane fade show active"  id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
           <span class="fs-1 bold-title">Карта</span>
-          <div class="col d-flex col mt-3 " id="map" style="border-radius: 24px;overflow: hidden;"></div>
+          <div class="col tab-card mt-3 overflow-hidden" id="map"></div>
         </div>
-
-        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-          <span class="fs-1 bold-title">Кто мы?</span>
+        <div class=" tab-pane fade" id="v-pills-profile" role="tabpanel"  aria-labelledby="v-pills-profile-tab">
+          <span class=" fs-1 bold-title">Кто мы?</span>
+          <div class="d-flex flex-column flex-lg-row ms-1 me-1 tab-card mt-3 gap-2 gap-lg-5">
+            <div class="col-lg fs-4 d-flex flex-column p-0 ">
+            <span>Наши экскурсии – это не просто путешествие в прошлое, а вдохновляющий опыт, наполненный патриотизмом и гордостью за нашу страну. Окунитесь в атмосферу величия Московских улиц. Да здравствует великая история!</span>
+            <img class="col-lg d-none d-lg-flex  p-0 overflow-hidden thumbnail mt-3 mt-lg-4" src="/assets/images/Chist.jpg">
+            </div>
+            <img class="col p-0 overflow-hidden thumbnail" src="/assets/images/Prizraki_i_dukhi_.jpg">
+          </div>
         </div>
-        <div class="tab-pane col fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-          <span class="fs-1 bold-title">Маршруты</span>
+        <div class=" tab-pane fade" id="v-pills-settings" role="tabpanel"  aria-labelledby="v-pills-settings-tab">
+          <span class="fs-1 bold-title">Почему мы?</span>
+          <div class="d-flex flex-column flex-lg-row ms-1 me-1 tab-card mt-3 gap-2 gap-md-4">
+            <div class="col-lg fs-4 d-flex flex-column p-0 ">
+            <span>Наши экскурсии – это не просто путешествие в прошлое, а вдохновляющий опыт, наполненный патриотизмом и гордостью за нашу страну. Окунитесь в атмосферу величия Московских улиц. Да здравствует великая история!</span>
+            <img class="col-lg d-none d-lg-flex  p-0 overflow-hidden thumbnail mt-3" src="/assets/images/Chist.jpg">
+            </div>
+            <img class="col p-0 overflow-hidden thumbnail" src="/assets/images/Prizraki_i_dukhi_.jpg">
+          </div>
         </div>
-        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-          <span class="fs-1 bold-title">Наша команда</span>
-        </div>
+        <div class=" tab-pane fade" id="v-pills-messages" role="tabpanel"  aria-labelledby="v-pills-messages-tab">
+          <span class="fs-1 bold-title">Выберите маршрут</span>
+        </div> 
+        
       </div>
     </div>
   </main>
@@ -78,7 +89,6 @@
   <script src="https://api-maps.yandex.ru/2.1/?load=package.standard&amp;lang=ru-RU&amp;apikey=5b302387-67cd-4180-a42e-71227e"
     type="text/javascript"></script>
     <script src="multiroute_pedestrian.js" type="text/javascript"></script>
-    <!-- <script src="event_reverse_geocode.js" type="text/javascript"></script> -->
 </body>
 
 </html>
