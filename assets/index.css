@@ -8,6 +8,7 @@
   --cream: #FDF4E3;
   --text-color: #FEE7FB;
   --title-color: #F985EA;
+  --light-blue: #00DCFF
 }
 
 @font-face {
@@ -30,11 +31,11 @@ body {
   box-shadow: 0px 4px 40px var(--fuchsia);
 }
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .content-card {
     border-radius: 40px;
   }
-}
+} */
 
 
 main {
@@ -93,4 +94,8 @@ main {
   max-height:100%;
   border-radius: 24px;
   object-fit: cover;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
