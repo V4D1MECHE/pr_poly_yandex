@@ -15,14 +15,5 @@ function getRoutes(){
 }
 
 
-function hello(){
-    const url = mainUrl;
-
-    fetch(url).then(response => { 
-        return response.json();
-    }).then(response => { 
-        console.log(response) 
-    })
-}
 
 window.addEventListener('DOMContentLoaded', getRoutes)
